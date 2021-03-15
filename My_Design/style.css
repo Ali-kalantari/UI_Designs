@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+font-family: 'poppins' , sans-serif;
+scroll-behavior: smooth;
+}
+
+p{
+    font-size: 300;
+    color: #111;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(pizza.jpg);
+    /* filter:blur(1px); */
+    background-size:cover ;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 5em;
+    color: #fff;
+}
+.banner .content p{
+    font-size:1em ;
+    color: #fff;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span{
+    color: #ff0157;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+header .navigation li a:hover{
+    color: #ff0157;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+header.sticky  .logo{
+    color: #111;
+}
+
+header.sticky  .navigation li a{
+    color: #111;
+}
+
+
+header.sticky  .navigation li a:hover{
+    color: #ff0157;
+}
+
+/* 
+.img-about{
+    height: 500px;
+    width: 650px;
+} */
+
+section{padding: 100px;}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col150
+{
+    position: relative;
+    width: 48%;
+}
+.col150 p{
+    line-height: 25px;
+}
+
+.titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span{
+color: #ff0157;
+font-weight: 700;
+font-size: 1.5em;
+}
+.row .col150 .imgBx{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+
+}
+
+.row .col150 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100% ;
+    height: 100%;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.5);
+}
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.img-menu{
+    width: 450px;
+    height: 300px;
+}
+
+.menu .content .box .text {
+    padding:15px 0 5px  ;
+}
+
+.menu .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+
+
+.expert .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+
+}
+
+.expert .content .box{
+    width: 250px;
+    margin: 15px;
+} 
+.expert .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.expert .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert .content .box .text{
+    padding: 15px 0 5px;
+}
+
+
+.expert .content .box .text h3{
+    font-weight:400;
+    color: #111;
+}
+
+.test {
+    background: url(wood.jpg);
+    background-size:cover ;
+}
+
+.white .titleText , .white p{
+    color: #fff;
+}
+
+.test .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.test .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.test .content .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.test .content .box .imgBx img{
+
+position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.test .content .box .text p{
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    line-height: 22px;
+}
+
+.test .content .box .text h3{
+    margin-top: 20px;
+    color: #111;
+    text-align: center;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight: 600;
+}
+
+.contactform{
+    padding: 75px 50px ;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(255, 1, 87, 0.5); 
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactform h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.contactform .inputBox input,
+.contactform .inputBox textarea
+{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactform .inputBox input[type='submit']{
+    color: #fff;
+    background:#ff0157 ;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.5;
+    max-width: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.copyrightText p{
+    color: #333;
+}
+.copyrightText a{
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.open , .close{
+    display: none;
+}
+
+@media (max-width: 990px)
+{
+    .banner .content h2{
+        font-size: 2rem;
+    }
+    .banner .content p{
+        font-size: 0.8rem;
+    }
+
+    header.sticky , header{
+    
+    padding: 40px 100px;
+    }
+    header .navigation{
+        display: none;
+    }
+    .togglemenu{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .togglemenu .close{
+        width: 100%;
+        height: 18%;
+        font-size: 35px;
+        color: white;
+        display: block;
+    }
+    .sticky .togglemenu .close{
+        color: #111;
+    }
+    .togglemenu.active .close{
+        display: none;
+    }
+    .togglemenu .open{
+        display: none;
+    }
+    .togglemenu.active .open{
+        display: block;
+        font-size: 35px;
+        width: 100%;
+        height: 100%;
+        margin-top: 0.5rem;
+        color: red;
+        z-index: 5000000;
+    }
+    .sticky .togglemenu .open{
+        color: red;
+    }
+    header .navigation{
+    	height: 0px;
+    }
+    
+   header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:all  0.5s ease-in-out;
+    }
+   header .navigation.active li a{
+       color: black;
+       font-size: 20px;
+       transition: all 0.5s ease;
+   }
+    
+  
+
+}
+
+@media (max-width : 400px){
+    header .logo{
+        float: left;
+        margin-left: -95px;
+    }
+    header .togglemenu{
+        right: -70px;    
+        bottom: 22px;   
+    }
+}
+
